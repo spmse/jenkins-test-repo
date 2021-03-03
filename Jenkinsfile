@@ -11,12 +11,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'echo "In Build stage" > artifacts/test-stage.txt"'
+                sh 'echo "In Build stage" > artifacts/test-stage.txt'
             }
         }
         stage('Test') {
             steps {
-                sh 'echo "In Test Stage" > artifacts/test-stage.txt"'
+                sh 'echo "In Test Stage" > artifacts/test-stage.txt'
             }
         }
         stage('Deliver for development') {
