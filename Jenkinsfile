@@ -37,4 +37,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            archiveArtifacts artifacts: 'artifacts/*', fingerprint: true
+        }
+    }
 }
